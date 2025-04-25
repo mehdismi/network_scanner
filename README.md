@@ -1,5 +1,5 @@
 # Project Title: SmartScan: Web-based Network Vulnerability Scanner.
-# 🔹 Project Description:
+# Project Description:
 
 SmartScan is a full-stack web application that allows authenticated users to perform various types of network scans through a user-friendly interface. The application is designed to support IT administrators and security professionals in discovering live hosts, open ports, OS fingerprints, and service versions using the Nmap engine in the backend. The scanning process is customizable and results are stored in a PostgreSQL database for visualization and future reference.
 
@@ -46,7 +46,7 @@ The application exposes a RESTful API with the following core endpoints:
 
 ### Database Design
 
-#### 🧑 User Table
+#### User Table
 - `id`
 - `username`
 - `first_name`
@@ -67,7 +67,7 @@ The application exposes a RESTful API with the following core endpoints:
 
 ---
 
-### 🧪 Scan Types (Defined by the user)
+### Scan Types (Defined by the user)
 
 | Scan Type                         | Command                                      |
 |----------------------------------|----------------------------------------------|
@@ -75,7 +75,6 @@ The application exposes a RESTful API with the following core endpoints:
 | **Open Port Scan**               | `nmap <target> --open -oX result.xml`        |
 | **OS, Services & Version Detection** | `nmap <target> -A -oX result.xml`       |
 
-> 📝 **Note**: Results will be parsed from the XML output and stored in JSON format.
 
 ### User Roles
 
@@ -96,7 +95,7 @@ All users are authenticated. Roles are limited to the following:
 - ✅ View and manage scan history  
 - ✅ View scan details with parsed structured results  
 - ✅ Interactive dashboard for visualization  
-- ⏳ Download scan reports (planned)
+- ✅ Download scan reports (planned)
 
 
 # Deployment Plan
