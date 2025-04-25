@@ -77,5 +77,29 @@ The application exposes a RESTful API with the following core endpoints:
 
 > 📝 **Note**: Results will be parsed from the XML output and stored in JSON format.
 
+### User Roles
+
+All users are authenticated. Roles are limited to the following:
+
+#### 👤 Registered User
+
+- Create/edit/delete scans  
+- Run scans  
+- View detailed results  
+- Access dashboard visualizations
+
+### Planned Features
+
+- ✅ User registration and login  
+- ✅ Form to define and submit a scan  
+- ✅ Execution of selected scan types using Nmap  
+- ✅ View and manage scan history  
+- ✅ View scan details with parsed structured results  
+- ✅ Interactive dashboard for visualization  
+- ⏳ Download scan reports (planned)
+
+
+# Deployment Plan
+Both backend and frontend will be containerized and deployed together. The PostgreSQL database will be configured as a service in docker-compose.yml. Static files will be served via Django or Nginx.
 
 
