@@ -44,6 +44,38 @@ The application exposes a RESTful API with the following core endpoints:
 | GET    | `/api/dashboard/summary/`  | Fetch aggregated scan statistics for charts  |
 
 
+### Database Design
+
+#### 🧑 User Table
+- `id`
+- `username`
+- `first_name`
+- `last_name`
+- `password`
+
+#### 📡 Scan Table
+- `id`
+- `user_id` (Foreign Key)
+- `name`
+- `description`
+- `target`
+- `type`
+- `status`
+- `created_at`
+- `updated_at`
+- `result_file`
+
+---
+
+### 🧪 Scan Types (Defined by the user)
+
+| Scan Type                         | Command                                      |
+|----------------------------------|----------------------------------------------|
+| **Host Discovery**               | `nmap <target> -sn -oX result.xml`           |
+| **Open Port Scan**               | `nmap <target> --open -oX result.xml`        |
+| **OS, Services & Version Detection** | `nmap <target> -A -oX result.xml`       |
+
+> 📝 **Note**: Results will be parsed from the XML output and stored in JSON format.
 
 
 
