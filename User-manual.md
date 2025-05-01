@@ -28,7 +28,8 @@ A full-stack web application to scan network ports using **Nmap**, with a **Reac
 
 ## Requirements
 
-Make sure these are installed on your Linux system (e.g., Ubuntu 22.04): (By running setup.sh, all required dependencies will be installed automatically.)
+Make sure these are installed on your Linux system (e.g., Ubuntu 22.04): 
+(By running setup.sh, all required dependencies will be installed automatically.)
 
 - Python 3.10+
 - pip
