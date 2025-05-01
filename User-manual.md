@@ -111,9 +111,10 @@ This setup is intended for development or local deployment. For production:
 
 ## Author & Support
 
-
 Developed by Mahdi Salmani
+
 GitHub: https://github.com/mehdismi/
+
 Email: Mohammad.salmani@oulu.fi
 
 
