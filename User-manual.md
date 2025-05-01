@@ -43,10 +43,10 @@ Make sure these are installed on your Linux system (e.g., Ubuntu 22.04): ()
 
 ### 1. Clone the project
 
-```bash
+```
 git clone https://github.com/yourusername/network-scanner.git
 cd network-scanner
-
+```
 
 ### 2. Run the installation script
 ```
