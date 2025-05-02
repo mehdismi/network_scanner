@@ -65,6 +65,7 @@ The application exposes a RESTful API with the following core endpoints:
 - `created_at`
 - `updated_at`
 - `result_file`
+- `progress`
 
 ---
 
