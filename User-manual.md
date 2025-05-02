@@ -46,7 +46,7 @@ Make sure these are installed on your Linux system (e.g., Ubuntu 22.04):
 
 ```
 git clone https://github.com/mehdismi/network_scanner.git
-cd network-scanner
+cd network_scanner
 ```
 
 ### 2. Run the installation script
