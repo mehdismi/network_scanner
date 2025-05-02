@@ -22,8 +22,8 @@ The application exposes a RESTful API with the following core endpoints:
 #### 🔐 Authentication
 | Method | Endpoint               | Description                    |
 | ------ | ---------------------- | ------------------------------ |
-| POST   | `api/accounts/register/`       | Register a new user            |
-| POST   | `api/token/`          | Login with username & password |
+| POST   | `/api/accounts/register/`       | Register a new user            |
+| POST   | `/api/token/`          | Login with username & password |
 | POST   | `/api/accounts/logout/`         | Logout current user            |
 | PUT    | `/api/accounts/change-password/` | Reset forgotten password       |
 | GET    | `/api/accounts/activity/`  | View user activity             |
