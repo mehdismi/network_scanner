@@ -31,6 +31,8 @@ deactivate
 
 cd "$BASE_DIR/network_scanner/netscan-frontend"
 npm install
-nohup env HOST=0.0.0.0 PORT=3000 npm start &
+npm run build
+nohup npx serve -s build -l 3000 &
+#nohup env HOST=0.0.0.0 PORT=3000 npm start &
 
 echo "Open your browser and use: http://<Server IP>:3000"
