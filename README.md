@@ -20,11 +20,17 @@ SmartScan is a full-stack web application that allows authenticated users to per
 The application exposes a RESTful API with the following core endpoints:
 
 #### 🔐 Authentication
-| Method | Endpoint           | Description                          |
-|--------|--------------------|--------------------------------------|
-| POST   | `/api/register/`   | Register a new user                  |
-| POST   | `/api/login/`      | Login with username & password       |
-| POST   | `/api/logout/`     | Logout current user                  |
+| Method | Endpoint               | Description                    |
+| ------ | ---------------------- | ------------------------------ |
+| POST   | `/api/register/`       | Register a new user            |
+| POST   | `/api/login/`          | Login with username & password |
+| POST   | `/api/logout/`         | Logout current user            |
+| PUT    | `/api/password-reset/` | Reset forgotten password       |
+| GET    | `/api/user/activity/`  | View user activity             |
+| DELETE | `/api/user/delete/`    | Delete user account            |
+| PUT    | `/api/user/update/`    | Edit user information          |
+| GET    | `/api/user/profile/`   | View user profile              |
+
 
 #### 📡 Scan Management
 | Method | Endpoint                  | Description                                 |
