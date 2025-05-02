@@ -1,4 +1,4 @@
-# Project Title: NettScan: Web-based Network Scanner.
+# Project Title: NetScan: Web-based Network Scanner.
 # Project Description:
 
 SmartScan is a full-stack web application that allows authenticated users to perform various types of network scans through a user-friendly interface. The application is designed to support IT administrators and security professionals in discovering live hosts, open ports, OS fingerprints, and service versions using the Nmap engine in the backend. The scanning process is customizable and results are stored in a PostgreSQL database for visualization and future reference.
