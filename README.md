@@ -33,20 +33,17 @@ The application exposes a RESTful API with the following core endpoints:
 
 
 #### 📡 Scan Management
-| Method | Endpoint                  | Description                                 |
-|--------|---------------------------|---------------------------------------------|
-| POST   | `/api/scans/`             | Create a new scan                           |
-| GET    | `/api/scans/`             | List all scans for the current user         |
-| GET    | `/api/scans/{id}/`        | Retrieve detailed information for a scan    |
-| PUT    | `/api/scans/{id}/`        | Edit scan configuration                     |
-| DELETE | `/api/scans/{id}/`        | Delete a scan                               |
-| POST   | `/api/scans/{id}/run/`    | Execute the scan                            |
-
-#### 📊 Dashboard (Optional)
-| Method | Endpoint                   | Description                                  |
-|--------|----------------------------|----------------------------------------------|
-| GET    | `/api/dashboard/summary/`  | Fetch aggregated scan statistics for charts  |
-
+| Method | Endpoint                   | Description                                 |
+| ------ | -------------------------- | ------------------------------------------- |
+| POST   | `/api/scans/`              | Create a new scan                           |
+| GET    | `/api/scans/`              | List all scans for the current user         |
+| GET    | `/api/scans/{id}/`         | Retrieve detailed information for a scan    |
+| PUT    | `/api/scans/{id}/`         | Edit scan configuration                     |
+| DELETE | `/api/scans/{id}/`         | Delete a scan                               |
+| POST   | `/api/scans/{id}/run/`     | Execute the scan                            |
+| GET    | `/api/scans/?search={name}` | Search scans by keyword       |
+| GET    | `/api/scans/dashboard/summary/`      | Get a creative summary list of recent scans |
+| POST   | `/api/scans/{id}/cancel/`  | Cancel a running or scheduled scan          |
 
 ### Database Design
 
