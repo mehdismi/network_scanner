@@ -22,14 +22,14 @@ The application exposes a RESTful API with the following core endpoints:
 #### 🔐 Authentication
 | Method | Endpoint               | Description                    |
 | ------ | ---------------------- | ------------------------------ |
-| POST   | `/api/register/`       | Register a new user            |
-| POST   | `/api/login/`          | Login with username & password |
-| POST   | `/api/logout/`         | Logout current user            |
-| PUT    | `/api/password-reset/` | Reset forgotten password       |
-| GET    | `/api/user/activity/`  | View user activity             |
-| DELETE | `/api/user/delete/`    | Delete user account            |
-| PUT    | `/api/user/update/`    | Edit user information          |
-| GET    | `/api/user/profile/`   | View user profile              |
+| POST   | `api/accounts/register/`       | Register a new user            |
+| POST   | `api/token/`          | Login with username & password |
+| POST   | `/api/accounts/logout/`         | Logout current user            |
+| PUT    | `/api/accounts/change-password/` | Reset forgotten password       |
+| GET    | `/api/accounts/activity/`  | View user activity             |
+| DELETE | `/api/accounts/profile/`    | Delete user account            |
+| PUT    | `/api/accounts/profile/`    | Edit user information          |
+| GET    | `/api/accounts/profile/`   | View user profile              |
 
 
 #### 📡 Scan Management
