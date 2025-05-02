@@ -11,7 +11,6 @@ SmartScan is a full-stack web application that allows authenticated users to per
 | **Backend**                 | Django (Django REST Framework)          |
 | **Database**                | PostgreSQL                              |
 | **Network Scanning Tool**   | Nmap                                    |
-| **Containerization** | Docker                            |
 | **Visualization**           | Chart.js / ApexCharts (for dashboard)   |
 
 
