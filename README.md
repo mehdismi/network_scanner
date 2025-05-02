@@ -98,6 +98,4 @@ All users are authenticated. Roles are limited to the following:
 
 
 # Deployment Plan
-Both backend and frontend will be containerized and deployed together. The PostgreSQL database will be configured as a service in docker-compose.yml. Static files will be served via Django or Nginx.
-
-
+Both the backend and frontend will be installed using a Bash script instead of containerization. The PostgreSQL database will be configured manually during setup.
