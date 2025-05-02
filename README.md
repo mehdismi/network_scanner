@@ -19,7 +19,7 @@ SmartScan is a full-stack web application that allows authenticated users to per
 
 The application exposes a RESTful API with the following core endpoints:
 
-#### 🔐 Authentication
+#### Authentication
 | Method | Endpoint               | Description                    |
 | ------ | ---------------------- | ------------------------------ |
 | POST   | `/api/accounts/register/`       | Register a new user            |
@@ -32,7 +32,7 @@ The application exposes a RESTful API with the following core endpoints:
 | GET    | `/api/accounts/profile/`   | View user profile              |
 
 
-#### 📡 Scan Management
+#### Scan Management
 | Method | Endpoint                   | Description                                 |
 | ------ | -------------------------- | ------------------------------------------- |
 | POST   | `/api/scans/`              | Create a new scan                           |
@@ -54,7 +54,7 @@ The application exposes a RESTful API with the following core endpoints:
 - `last_name`
 - `password`
 
-#### 📡 Scan Table
+#### Scan Table
 - `id`
 - `user_id` (Foreign Key)
 - `name`
@@ -82,7 +82,7 @@ The application exposes a RESTful API with the following core endpoints:
 
 All users are authenticated. Roles are limited to the following:
 
-#### 👤 Registered User
+#### Registered User
 
 - Create/edit/delete scans  
 - Run scans  
@@ -91,13 +91,13 @@ All users are authenticated. Roles are limited to the following:
 
 ### Planned Features
 
-- ✅ User registration and login  
-- ✅ Form to define and submit a scan  
-- ✅ Execution of selected scan types using Nmap  
-- ✅ View and manage scan history  
-- ✅ View scan details with parsed structured results  
-- ✅ Interactive dashboard for visualization  
-- ✅ Download scan reports (planned)
+-  User registration and login  
+-  Form to define and submit a scan  
+-  Execution of selected scan types using Nmap  
+-  View and manage scan history  
+-  View scan details with parsed structured results  
+-  Interactive dashboard for visualization  
+-  Download scan reports (planned)
 
 
 # Deployment Plan
