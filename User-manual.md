@@ -45,7 +45,7 @@ Make sure these are installed on your Linux system (e.g., Ubuntu 22.04):
 ### 1. Clone the project
 
 ```
-git clone https://github.com/mehdismi/network-scanner.git
+git clone https://github.com/mehdismi/network_scanner.git
 cd network-scanner
 ```
 
