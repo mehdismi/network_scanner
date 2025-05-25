@@ -19,6 +19,9 @@ sudo apt install -y postgresql postgresql-contrib nmap
 sudo -u postgres psql -c "DO \$\$ BEGIN IF NOT EXISTS (SELECT FROM pg_catalog.pg_user WHERE usename = 'netscan') THEN CREATE USER netscan WITH PASSWORD 'netscan'; END IF; END \$\$;"
 sudo -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname='netscan'" | grep -q 1 || sudo -u postgres createdb -O netscan netscan
 
+# Fix project permissions (in case script is run with sudo)
+sudo chown -R $USER:$USER "$BASE_DIR"
+
 # Django backend setup
 cd "$BASE_DIR/network_scanner"
 python3 -m venv venv
@@ -33,6 +36,11 @@ deactivate
 # React frontend setup
 cd "$BASE_DIR/network_scanner/netscan-frontend"
 npm install
+
+# Ensure homepage path is root for proper static linking
+if ! grep -q '"homepage"' package.json; then
+    sed -i '1s/^/"homepage": "\/",\n/' package.json
+fi
 npm run build
 
 # Deploy React build to NGINX
@@ -60,18 +68,18 @@ server {
     location /static/ {
         alias /var/www/react-frontend/static/;
         expires 1y;
-        add_header Cache-Control "public";
+        add_header Cache-Control \"public\";
     }
 
     error_page 404 /index.html;
 }
 EOL
 
-# Activate NGINX config
+# Enable NGINX config
 sudo ln -sf $NGINX_CONF /etc/nginx/sites-enabled/react-frontend
 sudo rm -f /etc/nginx/sites-enabled/default
 sudo nginx -t && sudo systemctl reload nginx
 
 # Final messages
-echo "? Django API running on: http://<your-ip>:8000"
-echo "? React frontend served via NGINX: http://<your-ip>:8080"
+echo "\n✅ Django API running on: http://<your-ip>:8000"
+echo "✅ React frontend served via NGINX: http://<your-ip>:8080"
