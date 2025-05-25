@@ -101,7 +101,7 @@ All users are authenticated. Roles are limited to the following:
 -  View and manage scan history  
 -  View scan details with parsed structured results  
 -  Interactive dashboard for visualization  
--  Download scan reports (planned)
+-  Download scan reports
 
 
 # Deployment Plan
