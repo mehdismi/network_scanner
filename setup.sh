@@ -47,7 +47,7 @@ sudo find /var/www/react-frontend -type d -exec chmod o+rx {} \;
 NGINX_CONF="/etc/nginx/sites-available/react-frontend"
 sudo bash -c "cat > $NGINX_CONF" <<EOL
 server {
-    listen 80;
+    listen 8080;
     server_name _;
 
     root /var/www/react-frontend;
@@ -74,4 +74,4 @@ sudo nginx -t && sudo systemctl reload nginx
 
 # Final messages
 echo "? Django API running on: http://<your-ip>:8000"
-echo "? React frontend served via NGINX: http://<your-ip>"
+echo "? React frontend served via NGINX: http://<your-ip>:8080"
