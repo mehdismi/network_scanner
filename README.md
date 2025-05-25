@@ -33,7 +33,7 @@ PUT | /api/v1/accounts/profile/{id}/ | Fully update user profile
 PATCH | /api/v1/accounts/profile/{id}/ | Partially update user profile
 DELETE | /api/v1/accounts/profile/{id}/ | Delete the user account
 PUT | /api/v1/accounts/change-password/ | Fully change password
-PATCH | /api/v1/accounts/change-password/ | Partial password change (if supported)
+PATCH | /api/v1/accounts/change-password/ | Partial password change
 
 
 #### Scan Management
