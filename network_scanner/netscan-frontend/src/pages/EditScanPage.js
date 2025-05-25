@@ -47,7 +47,7 @@ const EditScanPage = () => {
         target,
         scan_type: scanType,
       });
-      navigate('/dashboard');
+      navigate('/v1/dashboard');
     } catch (err) {
       console.error(err);
       setError('Failed to update scan. Please check your input.');
