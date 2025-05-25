@@ -15,9 +15,11 @@ fi
 # Install dependencies
 sudo apt install -y postgresql postgresql-contrib nmap
 
-# PostgreSQL user/db setup
+# PostgreSQL user/db setup (move to safe dir to avoid permission issues)
+cd /tmp
 sudo -u postgres psql -c "DO \$\$ BEGIN IF NOT EXISTS (SELECT FROM pg_catalog.pg_user WHERE usename = 'netscan') THEN CREATE USER netscan WITH PASSWORD 'netscan'; END IF; END \$\$;"
 sudo -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname='netscan'" | grep -q 1 || sudo -u postgres createdb -O netscan netscan
+cd "$BASE_DIR"
 
 # Fix project permissions (in case script is run with sudo)
 sudo chown -R $USER:$USER "$BASE_DIR"
