@@ -38,6 +38,7 @@ Make sure these are installed on your Linux system (e.g., Ubuntu 22.04):
 - npm
 - PostgreSQL
 - Nmap
+- Nginx
 
 ---
 
