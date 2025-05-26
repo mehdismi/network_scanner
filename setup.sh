@@ -83,5 +83,5 @@ sudo rm -f /etc/nginx/sites-enabled/default
 sudo nginx -t && sudo systemctl reload nginx
 
 # Final messages
-echo "\n✅ Django API running on: http://<your-ip>:8000"
-echo "✅ React frontend served via NGINX: http://<your-ip>:8080"
+echo "\n Django API running on: http://<your-ip>:8000"
+echo " React frontend served via NGINX: http://<your-ip>:8080"
