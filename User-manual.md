@@ -84,7 +84,7 @@ This script will:
 ## Access the App
 | Service    | URL                              |
 |------------|----------------------------------|
-| Frontend   | http://<your_server_ip>:3000     |
+| Frontend   | http://<your_server_ip>:8080    |
 | Backend    | http://<your_server_ip>:8000     |
 
 ## Creating a Superuser
