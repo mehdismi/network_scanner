@@ -21,6 +21,7 @@ A full-stack web application to scan network ports using **Nmap**, with a **Reac
 | Frontend   | React, Axios, MUI  |
 | Backend    | Django REST, JWT   |
 | Database   | PostgreSQL         |
+| Web server           | Nginx   |
 | Scanner    | Nmap (via system)  |
 | Infra      | Bare-metal / Linux |
 
