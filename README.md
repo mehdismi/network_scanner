@@ -15,6 +15,7 @@ SmartScan is a full-stack web application that allows authenticated users to per
 | **Database**                | PostgreSQL                              |
 | **Network Scanning Tool**   | Nmap                                    |
 | **Visualization**           | Chart.js / ApexCharts (for dashboard)   |
+| **Web server**           | Nginx   |
 
 
 
