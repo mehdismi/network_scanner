@@ -1,7 +1,7 @@
 
 # Network Scanner Web App
 
-A full-stack web application to scan network ports using **Nmap**, with a **React frontend**, **Django REST API backend**, and **PostgreSQL** database.
+A full-stack web application to scan network ports using **Nmap**, with a **React frontend**, **Django REST API backend**, **Nginx** and **PostgreSQL** database.
 
 ---
 
